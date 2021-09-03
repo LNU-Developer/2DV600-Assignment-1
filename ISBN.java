@@ -7,11 +7,10 @@ class ISBN {
 
         String stringDigits = input9ISBN();
 
-        Boolean validatedNumbers = isCorrectISBNSyntax(stringDigits);
+        Boolean isValidISBNSyntax = isValidISBNSyntax(stringDigits);
 
-        if (validatedNumbers) {
+        if (isValidISBNSyntax) {
             int checksum = calculateChecksum(stringDigits);
-            System.out.println(checksum);
             String checksumDigit;
             if (checksum != 10)
                 checksumDigit = Integer.toString(checksum);
@@ -29,7 +28,7 @@ class ISBN {
         return number;
     }
 
-    public static Boolean isCorrectISBNSyntax(String stringDigits) {
+    public static Boolean isValidISBNSyntax(String stringDigits) {
         try {
             Integer.parseInt(stringDigits); // To prompt an error if not numverical value
             if (stringDigits.length() != 9)
@@ -49,7 +48,7 @@ class ISBN {
 
     public static int calculateChecksum(String stringNumber) {
         int sum = 0;
-        for (int i = 1; i <= stringNumber.length(); ++i) {
+        for (int i = 1; i <= stringNumber.length(); i++) {
             sum += i * Character.getNumericValue(stringNumber.charAt(i - 1));
         }
         return sum % 11;
