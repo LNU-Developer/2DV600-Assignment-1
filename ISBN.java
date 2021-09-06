@@ -1,37 +1,36 @@
 import java.util.Scanner;
 import java.util.InputMismatchException;
 
-class ISBN {
+class RunISBN {
     public static void main(String args[]) {
         System.out.println("Enter the first 9 digits of an ISBN as integer: ");
+        ISBN isbn = new ISBN();
+        if (isbn.isValidSyntax)
+            System.out.println("The ISBN-10 number is " + isbn.getChecksumString());
 
-        String stringDigits = input9ISBN();
+    }
+}
 
-        Boolean isValidISBNSyntax = isValidISBNSyntax(stringDigits);
+public class ISBN {
+    String input;
+    Boolean isValidSyntax;
 
-        if (isValidISBNSyntax) {
-            int checksum = calculateChecksum(stringDigits);
-            String checksumDigit;
-            if (checksum != 10)
-                checksumDigit = Integer.toString(checksum);
-            else
-                checksumDigit = "X";
-            System.out.println("The ISBN-10 number is " + stringDigits + checksumDigit);
-
-        }
+    public ISBN() {
+        input = input9ISBN();
+        isValidSyntax = isValidISBNSyntax();
     }
 
-    public static String input9ISBN() {
+    String input9ISBN() {
         Scanner reader = new Scanner(System.in);
         String number = reader.next();
         reader.close();
         return number;
     }
 
-    public static Boolean isValidISBNSyntax(String stringDigits) {
+    Boolean isValidISBNSyntax() {
         try {
-            Integer.parseInt(stringDigits); // To prompt an error if not numverical value
-            if (stringDigits.length() != 9)
+            Integer.parseInt(this.input); // To prompt an error if not numverical value
+            if (this.input.length() != 9)
                 throw new NumberFormatException();
             return true;
         } catch (InputMismatchException e) {
@@ -46,11 +45,24 @@ class ISBN {
         }
     }
 
-    public static int calculateChecksum(String stringNumber) {
+    int calculateChecksum(String stringNumber) {
         int sum = 0;
         for (int i = 1; i <= stringNumber.length(); i++) {
             sum += i * Character.getNumericValue(stringNumber.charAt(i - 1));
         }
         return sum % 11;
+    }
+
+    public String getChecksumString() {
+        if (isValidSyntax) {
+            int checksum = calculateChecksum(this.input);
+            String checksumDigit;
+            if (checksum != 10)
+                checksumDigit = Integer.toString(checksum);
+            else
+                checksumDigit = "X";
+            return this.input + checksumDigit;
+        } else
+            return "";
     }
 }
