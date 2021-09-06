@@ -5,23 +5,28 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Anagram {
+class RunAnagram {
     public static void main(String args[]) {
-        String[] anagramStrings = importData();
 
         Scanner reader = new Scanner(System.in);
         String text = reader.nextLine();
         reader.close();
 
-        String str = buildAnagramString(text, anagramStrings);
+        Anagram am = new Anagram("wordlist");
+        System.out.println(am.buildAnagramString(text));
+    }
+}
 
-        System.out.println(str);
+public class Anagram {
+    String[] anagramStrings;
 
+    public Anagram(String filename) {
+        anagramStrings = importData(filename);
     }
 
-    public static String[] importData() {
+    String[] importData(String filename) {
         try {
-            BufferedReader buff = new BufferedReader(new FileReader("wordlist"));
+            BufferedReader buff = new BufferedReader(new FileReader(filename));
             List<String> list = new ArrayList<String>();
             String string;
 
@@ -37,7 +42,7 @@ public class Anagram {
         }
     }
 
-    public static boolean areAnagrams(char[] string1, char[] string2) {
+    boolean areAnagrams(char[] string1, char[] string2) {
         int length1 = string1.length;
         int length2 = string2.length;
 
@@ -54,9 +59,9 @@ public class Anagram {
         return true;
     }
 
-    public static String buildAnagramString(String word, String[] anagramStrings) {
+    public String buildAnagramString(String word) {
         String str = "";
-        for (String string : anagramStrings) {
+        for (String string : this.anagramStrings) {
             boolean areAnagrams = areAnagrams(word.toCharArray(), string.toCharArray());
             if (areAnagrams)
                 str += string + ", ";
