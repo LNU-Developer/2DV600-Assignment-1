@@ -1,6 +1,19 @@
+/*
+* Date: 2021-09-07.
+* File Name: TimeDemo.Java
+* Author: Rickard Marjanovic
+*
+*/
+
 import java.util.Scanner;
 import java.util.InputMismatchException;
 
+/**
+ * Class Description: This class is to showcase the Time class
+ *
+ * @version 1, 2021-09-07
+ * @author Rickard Marjanovic
+ */
 public class TimeDemo {
     public static void main(String args[]) {
         try {

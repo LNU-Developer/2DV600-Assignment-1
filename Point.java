@@ -1,4 +1,16 @@
+/*
+* Date: 2021-09-07.
+* File Name: Point.Java
+* Author: Rickard Marjanovic
+*
+*/
 
+/**
+ * Class Description: This class is to showcase the Point class.
+ *
+ * @version 1, 2021-09-07
+ * @author Rickard Marjanovic
+ */
 class RunPoint {
     public static void main(String args[]) {
         Point p1 = new Point();
@@ -15,6 +27,13 @@ class RunPoint {
             System.out.println("The two points are equal");
     }
 }
+
+/**
+ * Class Description: This class is to handle different equation systems.
+ *
+ * @version 1, 2021-09-07
+ * @author Rickard Marjanovic
+ */
 
 public class Point {
     int x = 0;

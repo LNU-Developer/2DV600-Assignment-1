@@ -1,7 +1,21 @@
+/*
+* Date: 2021-09-07.
+* File Name: Codestrip.Java
+* Author: Rickard Marjanovic
+*
+*/
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.List;
 import java.util.ArrayList;
+
+/**
+ * Class Description: This class is to run the code strip class.
+ *
+ * @version 1, 2021-09-07
+ * @author Rickard Marjanovic
+ */
 
 class RunCodestrip {
     public static void main(String args[]) {
@@ -15,6 +29,14 @@ class RunCodestrip {
         System.out.println("Number of comments removed: " + cs.removedComments);
     }
 }
+
+/**
+ * Class Description: This class is to load a java file and strip it of
+ * comments, as well as provide stats.
+ *
+ * @version 1, 2021-09-07
+ * @author Rickard Marjanovic
+ */
 
 public class Codestrip {
     int actualLines = 0;

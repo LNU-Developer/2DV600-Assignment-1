@@ -1,4 +1,16 @@
-import java.lang.reflect.Array;
+/*
+* Date: 2021-09-07.
+* File Name: ArraysMain.Java
+* Author: Rickard Marjanovic
+*
+*/
+
+/**
+ * Class Description: This class is to test the Arrays class.
+ *
+ * @version 1, 2021-09-07
+ * @author Rickard Marjanovic
+ */
 
 public class ArraysMain {
     public static void main(String args[]) {

@@ -1,3 +1,10 @@
+/*
+* Date: 2021-09-07.
+* File Name: Anagram.Java
+* Author: Rickard Marjanovic
+*
+*/
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.List;
@@ -5,6 +12,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * Class Description: This is a class to test out the Anagram class.
+ *
+ * @version 1, 2021-09-07
+ * @author Rickard Marjanovic
+ */
 class RunAnagram {
     public static void main(String args[]) {
 
@@ -17,6 +30,13 @@ class RunAnagram {
     }
 }
 
+/**
+ * Class Description: This is a class find all anagrams of a provided word by
+ * checking a loaded text file.
+ *
+ * @version 1, 2021-09-07
+ * @author Rickard Marjanovic
+ */
 public class Anagram {
     String[] anagramStrings;
 

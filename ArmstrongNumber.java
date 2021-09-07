@@ -1,6 +1,20 @@
+/*
+* Date: 2021-09-07.
+* File Name: ArmstrongNumber.Java
+* Author: Rickard Marjanovic
+*
+*/
+
 import java.util.Scanner;
 import java.util.InputMismatchException;
 
+/**
+ * Class Description: This is a class to find all armstrong numbers between a
+ * range.
+ *
+ * @version 1, 2021-09-07
+ * @author Rickard Marjanovic
+ */
 public class ArmstrongNumber {
     public static void main(String args[]) {
         try {

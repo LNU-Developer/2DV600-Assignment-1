@@ -1,5 +1,19 @@
+/*
+* Date: 2021-09-07.
+* File Name: ISBN.Java
+* Author: Rickard Marjanovic
+*
+*/
+
 import java.util.Scanner;
 import java.util.InputMismatchException;
+
+/**
+ * Class Description: This class is to try out the ISBN class.
+ *
+ * @version 1, 2021-09-07
+ * @author Rickard Marjanovic
+ */
 
 class RunISBN {
     public static void main(String args[]) {
@@ -10,6 +24,14 @@ class RunISBN {
 
     }
 }
+
+/**
+ * Class Description: This class is to calculate the last digit of an ISBN when
+ * provided 9 figures..
+ *
+ * @version 1, 2021-09-07
+ * @author Rickard Marjanovic
+ */
 
 public class ISBN {
     String input;

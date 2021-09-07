@@ -1,5 +1,19 @@
+/*
+* Date: 2021-09-07.
+* File Name: Arrays.Java
+* Author: Rickard Marjanovic
+*
+*/
 
 import java.util.*;
+
+/**
+ * Class Description: This is a helper class that will handle different arrays,
+ * like max, average, reverse etc.
+ *
+ * @version 1, 2021-09-07
+ * @author Rickard Marjanovic
+ */
 
 public class Arrays {
     static public int average(int[] arr) {

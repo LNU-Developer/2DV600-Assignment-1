@@ -1,3 +1,16 @@
+/*
+* Date: 2021-09-07.
+* File Name: Invoice.Java
+* Author: Rickard Marjanovic
+*
+*/
+
+/**
+ * Class Description: This class is to create and handle different invoices.
+ *
+ * @version 1, 2021-09-07
+ * @author Rickard Marjanovic
+ */
 
 public class Invoice {
     private String partNumber;

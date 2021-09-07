@@ -1,6 +1,20 @@
+/*
+* Date: 2021-09-07.
+* File Name: SquareRoot.Java
+* Author: Rickard Marjanovic
+*
+*/
+
 import java.util.Scanner;
 import java.util.InputMismatchException;
 
+/**
+ * Class Description: This class is to calculate the square root using the
+ * babylon algorithm.
+ *
+ * @version 1, 2021-09-07
+ * @author Rickard Marjanovic
+ */
 public class SquareRoot {
     public static void main(String args[]) {
         try {

@@ -1,5 +1,18 @@
+/*
+* Date: 2021-09-07.
+* File Name: TextProcessor.Java
+* Author: Rickard Marjanovic
+*
+*/
+
 import java.util.Scanner;
 
+/**
+ * Class Description: This class is to showcase the Text Proccessor class
+ *
+ * @version 1, 2021-09-07
+ * @author Rickard Marjanovic
+ */
 class RunTextProcessor {
     public static void main(String args[]) {
         try {
@@ -18,6 +31,13 @@ class RunTextProcessor {
     }
 }
 
+/**
+ * Class Description: This class is to change each letter of a text to the next
+ * letter in the alphabet as well as capitalizing any vowels
+ *
+ * @version 1, 2021-09-07
+ * @author Rickard Marjanovic
+ */
 public class TextProcessor {
 
     char[] alphabet = "abcdefghijklmnopqrstuvwxyzåäöABCDEFGHIJKLMNOPQRSUVWXYZÅÄÖ".toCharArray();

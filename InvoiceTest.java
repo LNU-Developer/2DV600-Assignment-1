@@ -1,3 +1,16 @@
+/*
+* Date: 2021-09-07.
+* File Name: InvoiceTest.Java
+* Author: Rickard Marjanovic
+*
+*/
+
+/**
+ * Class Description: This class is to test out the invoice class.
+ *
+ * @version 1, 2021-09-07
+ * @author Rickard Marjanovic
+ */
 
 public class InvoiceTest {
     public static void main(String args[]) {

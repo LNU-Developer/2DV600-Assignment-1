@@ -1,3 +1,17 @@
+/*
+* Date: 2021-09-07.
+* File Name: Time.Java
+* Author: Rickard Marjanovic
+*
+*/
+
+/**
+ * Class Description: This class is to create and calculate time in different
+ * ways
+ *
+ * @version 1, 2021-09-07
+ * @author Rickard Marjanovic
+ */
 public class Time {
     private int hours = 0;
     private int minutes = 0;
