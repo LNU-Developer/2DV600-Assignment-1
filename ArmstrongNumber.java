@@ -10,7 +10,7 @@ import java.util.InputMismatchException;
 
 /**
  * Class Description: This is a class to find all armstrong numbers between a
- * range.
+ * provided range.
  *
  * @version 1, 2021-09-07
  * @author Rickard Marjanovic
